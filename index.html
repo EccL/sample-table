@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            .test-table{
+                width:800px;
+                height:120px;
+                border-collapse:collapse;
+                /*border-spacing:0; works w/o border-collapse:collapse*/
+            }
+            tr,th,td{
+                border:2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="test-table" >
+            <tr>   
+                <th rowspan="2">Summary</th>
+                <th>Quarter I</th>
+                <th>Quarter II</th>
+            </tr>
+            <tr>
+                <th>Results</th>
+                <th>Results</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>10</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>30</td>
+                <td>40</td>
+            </tr>
+            
+            <tr>
+                <td>Total</td>
+                <td colspan="2">100</td>
+            </tr>
+        </table>
+    </body>
+</html>
